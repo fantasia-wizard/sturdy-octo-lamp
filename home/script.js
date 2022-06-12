@@ -1,4 +1,4 @@
-var games = ["Fantasia", "steve"];
+var games = ["Fantasia", "steve", "platformer"];
 for (var i in games){
   const app = document.createElement("div");
   const new_app = document.createElement("a");
