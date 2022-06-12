@@ -6,6 +6,7 @@ html{
 }
 .content{
   background-color: #ead4aa;
+  border-radius: 1pc;
   position: auto;
   margin-left: 15%;
   margin-right: 15%;
@@ -34,6 +35,9 @@ html{
   text-align: center;
 }
 .button{
+  border-radius: 1pc;
+  padding: 1px;
+  text-align: center;
   background-color: #8b9bb4;
   cursor: pointer;
 }
@@ -45,13 +49,17 @@ a{
   text-decoration: none;
 }
 .main-image{
-  width: inherit;
+  position: relative;
+  border: 5px solid #181425;
+  border-radius: 1pc;
+  left: 25%;
+  width: 50%;
 }
 .app{
   margin: 1%;
   display: inline-block;
   width: 45%;
-  border: 5px solid black;
+  border: 5px solid #181425;
   background-color: #733e39;
   color: #ead4aa;
   text-align: center;
