@@ -35,6 +35,7 @@ html{
   text-align: center;
 }
 .button{
+  border: 1px solid #181425;
   border-radius: 1pc;
   padding: 1px;
   text-align: center;
@@ -49,20 +50,30 @@ a{
   text-decoration: none;
 }
 .main-image{
-  position: relative;
-  border: 5px solid #181425;
+  display: table;
+  margin: 0 auto;
+  border: 1px solid #181425;
   border-radius: 1pc;
-  left: 25%;
+  margin-bottom: 1pc;
   width: 50%;
 }
 .app-image{
   border-radius: 0.7pc;
 }
 .app{
+  animation:
+    app_leave_hover
+    0.25s
+    ease-out
+    0s
+    alternate
+    1
+    forwards
+    running;
   margin: 1%;
   display: inline-block;
   width: 45%;
-  border: 5px solid #181425;
+  border: 1px solid #181425;
   background-color: #124e89;
   color: #ead4aa;
   text-align: center;
@@ -73,7 +84,7 @@ a{
 .app:hover{
   animation:
     app_hover
-    0.5s
+    0.25s
     ease-out
     0s
     alternate
@@ -81,12 +92,19 @@ a{
     forwards
     running;
 }
-
 @keyframes app_hover {
   0% {
-    filter: drop-shadow(0px 0px 0px #124e89);
+    filter: drop-shadow(0px 0px 0px #181425);
   }
   100% {
-    filter: drop-shadow(0px 0px 20px #124e89);
+    filter: drop-shadow(0px 0px 10px #181425);
+  }
+}
+@keyframes app_leave_hover {
+  0% {
+    filter: drop-shadow(0px 0px 10px #181425);
+  }
+  100% {
+    filter: drop-shadow(0px 0px 0px #181425);
   }
 }
