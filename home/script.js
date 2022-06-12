@@ -12,6 +12,7 @@ for (var i in games){
   new_app_image.src = "../games/" + games[i] + "/media/icon.png";
   new_app_image.style.width = "100%";
   new_app_image.alt = "Icon for " + games[i];
+  new_app_image.setAttribute("class", "app-image")
   new_app.appendChild(new_app_title);
   new_app_title.innerHTML = games[i];
 }
